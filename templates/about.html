@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expression Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Define the keyframes for the animation */
+        @keyframes textAnimation {
+          0% {
+            transform: translateY(0);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-20px);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+    
+        
+        .animated-text {
+          font-size: 24px;
+          animation: textAnimation 1s ease; 
+        }
+      </style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand animated-text" href="/">Expression Calculator</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active animated-text" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active animated-text" aria-current="page" href="/about">About</a>
+              </li>
+            </div>
+        </div>
+      </nav>
+
+
+    <div class="container my-5">
+
+      <h1 class="mb-3">Expression Calculator</h1>
+     
+      An expression calculator in Python is a program that takes mathematical expressions as input and evaluates them to produce a numerical result. These calculators can handle various mathematical operations, including addition, subtraction, multiplication, division, and more complex expressions involving parentheses and precedence rules.
+
+Here's a brief description of how you can create a simple expression calculator in Python:
+<br>
+
+1. Input Handling:
+
+The calculator should accept user input, which consists of a mathematical expression. You can use the input() function to get input from the user or read expressions from a file or other sources.
+<br>
+2. Tokenization:
+
+Split the input expression into individual tokens, such as numbers, operators (+, -, *, /), and parentheses. You can use regular expressions or simple string splitting to achieve this.
+<br>
+3. Parsing:
+
+Create a parser that can take the tokens and build a data structure that represents the expression's structure. This is typically done using a technique like the shunting yard algorithm or a recursive descent parser.
+<br>
+4. Evaluation:
+
+Traverse the parsed expression data structure and evaluate it according to the rules of operator precedence and associativity. Use a stack to manage operators and operands.
+<br>
+5. Error Handling:
+
+Implement error handling to catch and report issues such as division by zero, invalid input, or unmatched parentheses.
+<br>
+6. Display the Result:
+
+Display the final result of the expression evaluation to the user.
+    </div>
+
+    </div>
+    <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f0f0f0; padding: 10px;text-align: center;"> <b>
+
+        Made with ❤ by Aryan Bhan
+      </b>
+     
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  </html>
